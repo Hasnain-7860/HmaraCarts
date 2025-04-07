@@ -14,10 +14,10 @@ const Cart = () => {
     // };
 
     return (
-        <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-6 lg:grid-cols-5 mt-6">
+        <div className=" grid grid-cols-2 gap-5 sm:grid-cols-3 sm:gap-3  md:grid-cols-4  md:gap-6 lg:grid-cols-5 mt-6 lg:gap-10">
             {dummyProducts.map((data,index)=>(
-                <div key={index} className="border border-gray-500/20 rounded-md md:px-4 px-3 py-2 bg-white min-w-56 max-w-56 w-full ">
-                  <div className="group cursor-pointer flex items-center justify-center px-2">
+                <div key={index} className="border border-gray-500/20 rounded-md  md:px-4 px-3 py-2 bg-white min-w-56 max-w-56 w-full     ">
+                  <div className="group cursor-pointer flex items-center justify-center px-2 ">
                   <img className="group-hover:scale-105 transition max-w-26 md:max-w-36" src={data.image} alt={data.name} />
               </div>
               <div className="text-gray-500/60 text-sm">
