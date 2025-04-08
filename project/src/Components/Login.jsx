@@ -25,7 +25,7 @@ const Login = () => {
     </div>
     <div className="w-full ">
         <p>Password</p>
-        <input onChange={(e) => setPasswor(e.target.value)} value={password} placeholder="type here" className="border border-gray-200 rounded w-full p-2 mt-1 outline-indigo-500" type="password" required />
+        <input onChange={(e) => setPassword(e.target.value)} value={password} placeholder="type here" className="border border-gray-200 rounded w-full p-2 mt-1 outline-indigo-500" type="password" required />
     </div>
     {state === "register" ? (
         <p>
