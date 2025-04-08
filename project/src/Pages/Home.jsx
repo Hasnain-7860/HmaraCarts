@@ -13,6 +13,7 @@ const Home = () => {
         <BestSeller/>
         <Bottombanner/>
         <Newsletter/>
+       
     </div>
   )
 }
