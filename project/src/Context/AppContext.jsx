@@ -55,6 +55,10 @@ const removeFromCart =(itemId)=>{
   setCartItems(cartData)
 }
 
+
+//Get cart item count
+
+
   useEffect(()=>{
     fetchProducts()
   },[])

@@ -1,15 +1,12 @@
 import React from "react";
 import { assets } from "../assets/assets";
 import { useAppContext } from "../Context/Appcontext";
-// import { dummyProducts } from "../assets/assets";
 const Cart = ({ product }) => {
-  const [count, setCount] = React.useState(0);
   const { currency, addToCart, removeFromCart, cartItems, navigate } =
     useAppContext();
 
   return product && (
-    // <div className=" grid grid-cols-2 gap-5 sm:grid-cols-3 sm:gap-3  md:grid-cols-4  md:gap-6 lg:grid-cols-5 mt-6 lg:gap-10">
-    <div className="border border-gray-500/20 rounded-md  md:px-4 px-3 py-2 bg-white min-w-56 max-w-56 w-full     ">
+    <div onClick={()=>{navigate(`/product/${product.category.toLowerCase()}/${product._id}`); scrollTo(0,0)}} className="border border-gray-500/20 rounded-md  md:px-4 px-3 py-2 bg-white min-w-56 max-w-56 w-full     ">
       <div className="group cursor-pointer flex items-center justify-center px-2 ">
         <img
           className="group-hover:scale-105 transition max-w-26 md:max-w-36"
@@ -25,7 +22,7 @@ const Cart = ({ product }) => {
         <div className="flex items-center gap-0.5">
           {Array(5)
             .fill("")
-            .map((_, i) => (
+            .map((_, i)=> (
               <img
                 key={i}
                 className="md:w-3.5 "
@@ -42,7 +39,7 @@ const Cart = ({ product }) => {
               {currency}${product.price}
             </span>
           </p>
-          <div onClick={(e)=>{e.stopPropagation();}} className="text-green-500">
+          <div onClick={(e)=>{e.stopPropagation(index.decotation);}} className="text-green-500">
             {!cartItems[product._id] ? (
               <button
                 className="flex items-center justify-center gap-1 bg-green-100 border border-green-300 md:w-[80px] w-[64px] h-[34px] rounded text-green-600 font-medium cursor-pointer"
