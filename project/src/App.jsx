@@ -9,6 +9,8 @@ import Login from './Components/Login'
 import Allproduct from './Pages/Allproduct'
 import Productcategory from './Pages/Productcategory'
 import Productdetails from './Pages/Productdetails'
+import Cart from './Pages/Cart'
+// import Caart from './Pages/Cart'
 
 
 
@@ -26,6 +28,8 @@ const App = () => {
           <Route path="/products" element={<Allproduct/>}/>
           <Route path="/products/:category" element={<Productcategory/>}/>
           <Route path='/product/:category/:id' element={<Productdetails/> }/>
+          {/* <Route path='/cart' element={<Caart/>}/> */}
+          <Route path='/cart' element={<Cart/>}/>
 
         </Routes>
       </div>
