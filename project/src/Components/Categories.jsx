@@ -1,6 +1,6 @@
 import React from 'react'
 import {  categories } from '../assets/assets'
-import { useAppContext } from '../Context/Appcontext'
+import { useAppContext } from '../context/Appcontext'
 
 const Categories = () => {
   const {navigate} = useAppContext()

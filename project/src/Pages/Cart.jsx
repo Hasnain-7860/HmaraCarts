@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useAppContext } from "../Context/Appcontext"
+import { useAppContext } from "../context/Appcontext"
 import { assets, dummyAddress } from "../assets/assets"
 
 // import { useState } from "react"

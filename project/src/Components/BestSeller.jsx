@@ -1,6 +1,6 @@
 import React from 'react'
 import Cart from './Cart';
-import { useAppContext } from '../Context/Appcontext';
+import { useAppContext } from '../context/Appcontext';
 
 const BestSeller = () => {
   const {products}=useAppContext();

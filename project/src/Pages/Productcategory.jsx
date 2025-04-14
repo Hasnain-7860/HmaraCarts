@@ -1,8 +1,8 @@
 import React from 'react'
-import { useAppContext } from '../Context/Appcontext'
+import { useAppContext } from '../context/Appcontext'
 import { useParams } from 'react-router-dom'
 import { categories } from '../assets/assets'
-import Cart from '../Components/Cart'
+import Cart from '../components/Cart'
 
 const Productcategory = () => {
     const {products} = useAppContext()

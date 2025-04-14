@@ -1,5 +1,5 @@
 import React from 'react'
-import { useAppContext } from '../Context/Appcontext';
+import { useAppContext } from '../context/Appcontext';
 
 const Login = () => {
     const {setShowUserLogin} = useAppContext()
