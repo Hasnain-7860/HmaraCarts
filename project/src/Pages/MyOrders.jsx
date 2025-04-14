@@ -3,8 +3,8 @@ import { useAppContext } from '../context/AppCon'
 import { dummyOrders } from '../assets/assets'
 
 const MyOrders = () => {
-    const [MyOrders, setMyOrders] = useState([])
-    const[currency] = useAppContext()
+    const [myOrders, setMyOrders] = useState([])
+    const{currency} = useAppContext()
 
     const fetchMyOrders = async ()=>{
         setMyOrders(dummyOrders)
@@ -19,7 +19,7 @@ const MyOrders = () => {
             <p className='text-2xl font-medium uppercase'>My orders</p>
             <div className='w-16 h-0.5 bg-green-500 rounded-full'></div>
         </div>
-        {MyOrders.map((order, index)=>(
+        {myOrders.map((order, index)=>(
             <div key={index} className='border border-gray-300 rounded-lg mb-10 p-4 py-5 max-w-4xl'> 
                 <p className='flex justify-between md:items-center text-gray-400 md:font-medium max-md:flex-col'>
                     <span>OrderId : {order._id}</span>
