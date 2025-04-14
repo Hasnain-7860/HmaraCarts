@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { dummyProducts } from "../assets/assets";
 import toast from "react-hot-toast";
 
-export const AppContext = createContext();
+export const AppCon = createContext();
 export const AppContextProvider = ({children})=>{
 
   const currency = import.meta.VITE_CURRENCY;
@@ -85,11 +85,11 @@ const getCartAmount = ()=>{
 
   const value = {navigate,user,setUser,setIsSeller,isSeller,showUserLogin,setShowUserLogin,products, currency,addToCart,updateCartItme,removeFromCart, cartItems,searchQuery,setSearchQuery,getCartCount,getCartAmount}
 
-  return <AppContext.Provider value={value}>
+  return <AppCon.Provider value={value}>
     {children}
-  </AppContext.Provider>
+  </AppCon.Provider>
 }
 
 export const useAppContext = ()=>{
-  return useContext(AppContext)
+  return useContext(AppCon)
 }

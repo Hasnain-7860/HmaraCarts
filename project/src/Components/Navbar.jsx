@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { assets } from '../assets/assets'
-import { useAppContext } from '../context/Appcontext'
+import { useAppContext } from '../context/AppCon'
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false)

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useAppContext } from '../context/Appcontext'
-import Cart from '../components/Cart'
+import Cart from '../Components/Cart'
+import { useAppContext } from '../context/AppCon'
 
 const Allproduct = () => {
     const {products, searchQuery} = useAppContext()

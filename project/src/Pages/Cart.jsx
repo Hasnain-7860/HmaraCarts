@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import { useAppContext } from "../context/Appcontext"
 import { assets, dummyAddress } from "../assets/assets"
+import { useAppContext } from "../context/AppCon"
 
 // import { useState } from "react"
 
