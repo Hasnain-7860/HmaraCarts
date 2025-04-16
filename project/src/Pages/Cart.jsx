@@ -75,7 +75,7 @@ const Cart = () => {
                         </div>
                         <p className="text-center">{currency}{product.offerPrice * product.quantity}</p>
                         <button onClick={()=>removeFromCart(product._id)} className="cursor-pointer mx-auto">
-                           <img className="inline-block w-6 h-6" src={assets.remove_icon} alt="remove" />
+                           <img className="inline-block w-6 h-6 " src ={assets.remove_icon} alt="remove"  />
                         </button>
                     </div>)
                 )}

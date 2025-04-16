@@ -26,6 +26,15 @@ const MyOrders = () => {
                     <span>Payment : {order.paymentType}</span>
                     <span>Total Amount : {currency}{order.amount}</span>
                 </p>
+                {order.items.map((item, index)=>(
+                    <div>
+                        <div>
+                            <div>
+                                <img className='w-16 h-16' src={item.product.image[0]} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                ))}
             </div>
         ))}
     </div>
