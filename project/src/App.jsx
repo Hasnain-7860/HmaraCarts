@@ -13,11 +13,14 @@ import { useAppContext } from './context/AppCon'
 import AddAddress from './Pages/AddAddress'
 import MyOrders from './Pages/MyOrders'
 // import Caart from './Pages/Cart'
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
 const App = () => {
-  const isSellerPath = useLocation().pathname.includes("seller");
+  const isSellerPath = useLocation().pathname.includes("deskboard");
   const {showUserLogin} = useAppContext()
   return (
     <div>
