@@ -17,10 +17,10 @@ const Navbar = () => {
     }
   },[searchQuery])
   return (
-    <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 bg-white relative transition-all">
+    <nav className="flex items-center justify-between px-12 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 bg-white relative transition-all">
 
     <NavLink to='/' onClick={()=>setOpen(false)}>
-        <h1 className='text-[35px] text-green-500 font-bold md:text-[35px]'>Hmara<span className='text-black'>Cart </span></h1>
+        <h1 className='text-[35px] text-green-500 font-bold '>Hmara<span className='text-black'>Cart </span></h1>
     </NavLink>
 
     {/* Desktop Menu */}
@@ -38,7 +38,7 @@ const Navbar = () => {
             </svg> */}
         </div>
 
-        <div onClick={()=> navigate("/Cart")} className="relative cursor-pointer">
+        <div onClick={()=> navigate("/Cart")} className="relative cursor-pointer ">
             <img src={assets.nav_cart_icon} alt="cart" className='w-6 opacity-80' />
             <button className="absolute -top-2 -right-3 text-xs text-white bg-green-500 w-[18px] h-[18px] rounded-full">{getCartCount()}</button>
         </div>
