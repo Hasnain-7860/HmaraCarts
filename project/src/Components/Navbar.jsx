@@ -5,7 +5,7 @@ import { useAppContext } from '../context/AppCon'
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false)
-  const {user,setUser,  setShowUserLogin, navigate,searchQuery,setSearchQuery,getCartCount} = useAppContext();
+    const {user,setUser,  setShowUserLogin, navigate,searchQuery,setSearchQuery,getCartCount} = useAppContext();
 
   const logout = async ()=>{
     setUser(null);
@@ -62,12 +62,12 @@ const Navbar = () => {
         </div>
         </div>
           
-      <img className='w-10' src={assets.profile_icon} alt="" />
+      {/* <img className='w-10' src={assets.profile_icon} alt="" /> */}
 
 
     <button onClick={() => open ? setOpen(false) : setOpen(true)} aria-label="Menu" className="sm:hidden">
         {/* Menu Icon SVG */}
-        
+        <img src={assets.menu_icon} alt="" />        
     </button>
 
     {/* Mobile Menu */}
